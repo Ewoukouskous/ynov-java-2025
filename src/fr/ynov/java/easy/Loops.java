@@ -12,11 +12,22 @@ public class Loops {
 
         System.out.println("While : ");
 
-        int index = 1;
-        while (index <= 10) {
-            System.out.println(index);
-            index++;
+        int Whileindex = 1;
+        while (Whileindex <= 10) {
+            System.out.println(Whileindex);
+            Whileindex++;
         }
+
+        System.out.println("-=-=-=-=-=-=-");
+
+        System.out.println("Do While : ");
+
+        int DoWhileindex = 1;
+        do {
+            System.out.println(DoWhileindex);
+            DoWhileindex++;
+        }
+        while (DoWhileindex <= 10);
     }
 
 }
