@@ -10,12 +10,13 @@ public class Loops {
 
         System.out.println("-=-=-=-=-=-=-");
 
-//        System.out.println("While : ");
-//
-//        int index = 1;
-//        while (index <= 10) {
-//
-//        }
+        System.out.println("While : ");
+
+        int index = 1;
+        while (index <= 10) {
+            System.out.println(index);
+            index++;
+        }
     }
 
 }
