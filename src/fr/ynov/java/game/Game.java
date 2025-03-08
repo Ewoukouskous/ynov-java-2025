@@ -17,12 +17,10 @@ public class Game {
         System.out.println("Your choice: " + playerChoice + "\nComputer choice: " + computerChoice);
 
         if (Utils.checkRound(playerChoice, computerChoice)) {
-            player.setScore(player.getScore() + 1);
+            player.addScore();
         }
 
     }
-
-    // Si le choix est gagné on lui ajoute +1 dans le leaderboard
 
     // proposition de la revanche
 
