@@ -11,6 +11,7 @@ public class Choice {
         SCISSOR
     }
 
+        // Big switch case that ask the player which option he wants
     public static Choices playerChoice() {
         Scanner input = new Scanner(System.in);
 
@@ -31,6 +32,7 @@ public class Choice {
         }
     }
 
+        // Will randomly choose the choice of the computer
     public static Choices computerChoice() {
         Choices[] choices = Choices.values();
         int randomIndex = new Random().nextInt(choices.length);

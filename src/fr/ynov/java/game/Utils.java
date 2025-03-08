@@ -6,6 +6,7 @@ import static fr.ynov.java.game.Choice.Choices.*;
 
 public class Utils {
 
+        // Method that will create a new player
     public static void newPlayer(Player player) {
         Scanner input = new Scanner(System.in);
 
@@ -15,6 +16,8 @@ public class Utils {
         player.setName(name);
     }
 
+        // Method that will check the choices of the player and the computer
+            // Will return false if there's an equality, false if the computer wins and true if the player wins
     public static boolean checkRound(Choice.Choices playerChoice, Choice.Choices computerChoice) {
         if (playerChoice.equals(computerChoice)) {
             System.out.println("Equality ! You gain 0 points");
@@ -29,6 +32,8 @@ public class Utils {
         return false;
     }
 
+        // Switch case that will ask if the player wants a revenge or not
+            // If he wants it return true, false if he doesn't
     public static boolean revenge() {
         Scanner revengeCheck = new Scanner(System.in);
         System.out.println("Do you wan't another game ?\n1. Yes\n2. No");
