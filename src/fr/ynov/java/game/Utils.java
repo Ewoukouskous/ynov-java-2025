@@ -29,4 +29,17 @@ public class Utils {
         return false;
     }
 
+    public static boolean revenge() {
+        Scanner revengeCheck = new Scanner(System.in);
+        System.out.println("Do you wan't another game ?\n1. Yes\n2. No");
+        int check = revengeCheck.nextInt();
+
+        switch (check) {
+            case 1: return true;
+            case 2: return false;
+            default: System.out.println("Invalid choice. Try again");
+        }
+        return false;
+    }
+
 }

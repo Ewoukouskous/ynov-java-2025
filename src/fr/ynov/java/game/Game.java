@@ -1,5 +1,7 @@
 package fr.ynov.java.game;
 
+import java.util.Scanner;
+
 public class Game {
 
     public static void game() {
@@ -9,19 +11,24 @@ public class Game {
         System.out.println("Welcome " +  player.getName());
         System.out.println("-=-=-=-=-=-=-=-=-=-=-");
 
-        Choice.Choices playerChoice = Choice.playerChoice();
-        System.out.println("-=-=-=-=-=-=-=-=-=-=-");
+        boolean revenge = true;
 
-        Choice.Choices computerChoice = Choice.computerChoice();
+        while (revenge) {
 
-        System.out.println("Your choice: " + playerChoice + "\nComputer choice: " + computerChoice);
+            Choice.Choices playerChoice = Choice.playerChoice();
+            System.out.println("-=-=-=-=-=-=-=-=-=-=-");
 
-        if (Utils.checkRound(playerChoice, computerChoice)) {
-            player.addScore();
+            Choice.Choices computerChoice = Choice.computerChoice();
+
+            System.out.println("Your choice: " + playerChoice + "\nComputer choice: " + computerChoice);
+
+            if (Utils.checkRound(playerChoice, computerChoice)) {
+                player.addScore();
+            }
+
+            if (!Utils.revenge()) {
+                revenge = false;
+            }
         }
-
     }
-
-    // proposition de la revanche
-
 }
