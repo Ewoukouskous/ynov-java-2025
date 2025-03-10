@@ -9,4 +9,9 @@ public class Sedan extends Vehicle {
         super(brand, model, year);
         setType(CarType.SEDAN);
     }
+
+    @Override
+    public double getDailyPrice() {
+        return 37.50;
+    }
 }

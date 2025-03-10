@@ -2,7 +2,7 @@ package fr.ynov.java.car;
 
 import java.util.Random;
 
-public abstract class Vehicle {
+public abstract class Vehicle implements Rentable {
 
     private String plate;
     private Brand brand;

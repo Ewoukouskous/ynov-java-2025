@@ -9,4 +9,9 @@ public class SportCar extends Vehicle {
         super(brand, model, year);
         setType(CarType.SPORT);
     }
+
+    @Override
+    public double getDailyPrice() {
+        return 55.85;
+    }
 }

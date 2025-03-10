@@ -10,4 +10,9 @@ public class Van extends Vehicle {
         super(brand, model, year);
         setType(CarType.VAN);
     }
+
+    @Override
+    public double getDailyPrice() {
+        return 20.25;
+    }
 }

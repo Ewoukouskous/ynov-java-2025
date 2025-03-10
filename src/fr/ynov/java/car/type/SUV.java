@@ -9,4 +9,9 @@ public class SUV extends Vehicle {
         super(brand, model, year);
         setType(CarType.SUV);
     }
+
+    @Override
+    public double getDailyPrice() {
+        return 30.00;
+    }
 }

@@ -11,4 +11,8 @@ public class Truck extends Vehicle {
         setType(CarType.TRUCK);
     }
 
+    @Override
+    public double getDailyPrice() {
+        return 15.50;
+    }
 }
