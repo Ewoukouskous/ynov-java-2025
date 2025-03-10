@@ -51,17 +51,22 @@ public class RentingSystem {
         }
     }
 
-    public boolean rentVehicles(Vehicle vehicle, int days) {
+    public boolean rentVehicles(Vehicle vehicle, int days, Customer customer) {
         for (Vehicle check : rentedVehicles) {
             if (Objects.equals(vehicle.getPlate(), check.getPlate())) {
                 System.out.println("this vehicle is already rented");
                 return false;
             }
-            double totalPrice = vehicle.getDailyPrice() * days;
-            System.out.println("Price of the rent is " + totalPrice + "\n you rent this vehicle");
-            removeFromFleet(vehicle);
-            addToRentedVehicles(vehicle);
-            return true;
+            if ( customer.getVehicle() == null) {
+
+                double totalPrice = vehicle.getDailyPrice() * days;
+                System.out.println("Price of the rent is " + totalPrice + "\n you rent this vehicle");
+                removeFromFleet(vehicle);
+                addToRentedVehicles(vehicle);
+                return true;
+            } else {
+                System.out.println("this customer already have a vehicle");
+            }
         }
         return false;
     }
