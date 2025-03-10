@@ -27,12 +27,13 @@ public abstract class Vehicle implements Rentable {
         return first + "-" + letters + "-" + last;
     }
 
-    public void printCarInfo() {
+    public boolean printCarInfo() {
         System.out.println("Brand: " + getBrand());
         System.out.println("Model: " + getModel());
         System.out.println("Year: " + getYear());
         System.out.println("Type: " + getType());
         System.out.println("Plate: " + getPlate());
+        return false;
     }
 
     public String getPlate() {
