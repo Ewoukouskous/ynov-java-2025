@@ -58,7 +58,6 @@ public class RentingSystem {
                 return false;
             }
             if ( customer.getVehicle() == null) {
-
                 double totalPrice = vehicle.getDailyPrice() * days;
                 System.out.println("Price of the rent is " + totalPrice + "\n you rent this vehicle");
                 removeFromFleet(vehicle);
@@ -71,4 +70,7 @@ public class RentingSystem {
         return false;
     }
 
+    public ArrayList<Vehicle> getFleet() {
+        return this.fleet;
+    }
 }

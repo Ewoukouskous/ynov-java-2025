@@ -1,29 +1,20 @@
 package fr.ynov.java.car;
 
-import java.util.Random;
-
 public class Customer {
 
     private String name;
     private int age;
-    private int license;
+    private boolean license;
     private Vehicle vehicle;
 
-    public Customer(String name, int age) {
+    public Customer(String name, int age, boolean license) {
         this.name = name;
         this.age = age;
-        this.license = setLicense();
+        this.license = license;
         this.vehicle = null;
     }
 
-    public int setLicense() {
-        int licenseID = 0;
-        Random random = new Random();
-        licenseID =  random.nextInt(10000, 19999);
-        return licenseID;
-    }
-
-    public int getLicense() {
+    public boolean getLicense() {
         return license;
     }
 
