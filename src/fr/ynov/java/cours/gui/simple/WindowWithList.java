@@ -1,7 +1,12 @@
 package fr.ynov.java.cours.gui.simple;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import java.awt.BorderLayout;
+import java.awt.Dimension;
 
 public class WindowWithList {
     public static void main(String[] args) {

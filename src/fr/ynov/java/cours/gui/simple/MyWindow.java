@@ -1,6 +1,6 @@
 package fr.ynov.java.cours.gui.simple;
 
-import javax.swing.*;
+import javax.swing.JFrame;
 
 public class MyWindow extends JFrame {
 
